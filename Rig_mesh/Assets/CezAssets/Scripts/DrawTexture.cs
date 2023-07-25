@@ -1,32 +1,55 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class DrawTexture : MonoBehaviour
 {
-    public GameObject objectWithMaterial;
-    // Start is called before the first frame update
+    public Camera cam;
+   // public Material projector;
+    public float size;
     Vector3 pos;
     Ray ray;
     MeshCollider meshCollider;
-    public Texture aTexture;
+    public GameObject posObject1;
+
     void Start()
     {
-        meshCollider = objectWithMaterial.GetComponent<MeshCollider>();
+        cam = GetComponent<Camera>();
+      //  projector = Instantiate(projector);
     }
 
     // Update is called once per frame
     void Update()
     {
-        ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-     
-        if(meshCollider.Raycast(ray, out hit, 1000))
-            {
-                pos = hit.point;
-                Vector2 coord = new Vector2(hit.textureCoord.x * 1024, 1024 - hit.textureCoord.y * 1024);
-                Debug.Log(hit.textureCoord);
-                Graphics.DrawTexture(new Rect(coord.x, coord.y, 100, 100), aTexture);
+        if (!Input.GetMouseButton(0))
+        return;
+
+       RaycastHit hit;
+            if (!Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition), out hit))
+            return;
+
+       posObject1.transform.position= hit.point;
+
+      /*
+        if (!Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition), out hit))
+            return;
+
+            
+            pos = hit.point;
+               if (!hit.collider.TryGetComponent(out DecalableCollider decalableCollider)) {
+               Debug.Log("no collider");
+                return;
+               
             }
+           
+            foreach (var decalableRenderer in decalableCollider.GetDecalableRenderers()) {
+
+              /* PaintDecal.RenderDecal(decalableRenderer, projector, hit.point-transform.forward*0.25f,
+                    Quaternion.FromToRotation(Vector3.forward, transform.forward), Vector2.one * size, 0.1f);
+                     PaintDecal.RenderDecal(decalableRenderer, projector, hit.point,
+                  Quaternion.FromToRotation(Vector3.forward, hit.collider.transform.forward), Vector2.one * size, 0.01f);
+                      Debug.Log("i");
+            
+            }
+            */
     }
 }
