@@ -18,30 +18,7 @@ public class CutController : MonoBehaviour
 
     int Counter1 = 0;
     int Counter2 = 0;
-    void onTriggerEnter(Collider other)
-    {
-        /*if (other.gameObject.tag == "Cutter")
-        {
-            Debug.Log("enter");
-        }*/
-                    Debug.Log("enter");
 
-    }
-  void onTriggerStay(Collider other)
-    {
-        /*if (other.gameObject.tag == "Cutter")
-        {
-            Debug.Log("stay");
-        }*/
-        Debug.Log("stay");
-    }
-  void onTriggerExit(Collider other)
-    {
-        if (other.gameObject.tag == "Cutter")
-        {
-            Debug.Log("exit");
-        }
-    }
         void Start()
     {
         mat = objectWithMaterial.GetComponent<MeshRenderer>().sharedMaterial;

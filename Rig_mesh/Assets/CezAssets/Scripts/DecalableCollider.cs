@@ -7,4 +7,4 @@ public class DecalableCollider : MonoBehaviour {
     private Renderer[] decalableRenderers;
 
     public Renderer[] GetDecalableRenderers() => decalableRenderers;
-}
+} 

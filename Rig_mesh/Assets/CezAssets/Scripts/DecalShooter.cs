@@ -18,7 +18,7 @@ public class DecalShooter : MonoBehaviour {
     void Start() {
         projector = Instantiate(projector);
         projector2 = Instantiate(projector2);
-    }
+    } 
     void Update() {
         if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, 10f, hitMask, QueryTriggerInteraction.Ignore)) {
             projector.color = color;

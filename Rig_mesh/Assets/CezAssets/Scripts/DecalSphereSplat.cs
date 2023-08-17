@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using SkinnedMeshDecals;
 using UnityEngine;
@@ -8,9 +8,9 @@ public class DecalSphereSplat : MonoBehaviour {
     public Material projector;
     public Color color;
     private static Collider[] staticColliders = new Collider[32];
-    void Start() {
+    void Start() { 
         projector = Instantiate(projector);
-    }
+    } 
     void Update() {
         projector.color = color;
         float radius = transform.localScale.x*0.25f;

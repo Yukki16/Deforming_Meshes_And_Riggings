@@ -16,7 +16,6 @@ public class DrawTexture : MonoBehaviour
         cam = GetComponent<Camera>();
       //  projector = Instantiate(projector);
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -28,6 +27,7 @@ public class DrawTexture : MonoBehaviour
             return;
 
        posObject1.transform.position= hit.point;
+       
 
       /*
         if (!Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition), out hit))
