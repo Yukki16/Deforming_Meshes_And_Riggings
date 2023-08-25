@@ -12,13 +12,13 @@
     
 
     ColorMask  A
-    ZWrite On
+    //ZWrite On
 
     Pass 
     {
         Name "FirstPass"
         Cull Back
-        ZTest Greater
+        //ZTest Greater
     }
 
 

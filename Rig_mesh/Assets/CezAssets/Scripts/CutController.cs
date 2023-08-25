@@ -82,7 +82,7 @@ public class CutController : MonoBehaviour
             }
       //  }
       if (Input.GetKeyDown("k")) for(int i=0;i<256;i++) {Debug.Log(Pos1.GetPixel(i,0));}
-      if (Input.GetKeyDown("z")) {
+     /* if (Input.GetKeyDown("z")) {
         for(int i=0;Counter1<256;i++) {    
         
         Pos1.SetPixel(i, 0,new Color(0f, 0f, 0f, 0f)); 
@@ -102,6 +102,6 @@ public class CutController : MonoBehaviour
         mat.SetTexture("_normalText1",Normal2);
         Normal2.Apply();}
         
-      }
+      }*/
     }
 }

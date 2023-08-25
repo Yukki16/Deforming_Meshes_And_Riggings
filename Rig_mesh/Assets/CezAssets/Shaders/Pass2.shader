@@ -14,11 +14,11 @@ Shader "Hidden/Renderers/Pass2"
 
 
     ColorMask  A
-    ZWrite Off
+   // ZWrite Off
 
     Pass 
     {
-        Name "FirstPass"
+        //Name "FirstPass"
     Cull Front
    // ZTest Greater
     }
