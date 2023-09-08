@@ -56,8 +56,11 @@ public class CustomRendererFeature : ScriptableRendererFeature {
                     drawingSettings.overrideMaterial = settings.overrideMaterial;
                 }
                 foreach (var subtractee in settings.subtractees){
-                cmd.DrawRenderer(subtractee, settings.overrideMaterial, 0, settings.overrideMaterialPass);
-                cmd.DrawRenderer(subtractee, settings.overrideMaterial, 0, settings.overrideMaterialPass+1);
+                    if (subtractee != null)
+                    {
+                        cmd.DrawRenderer(subtractee, settings.overrideMaterial, 0, settings.overrideMaterialPass);
+                        cmd.DrawRenderer(subtractee, settings.overrideMaterial, 0, settings.overrideMaterialPass + 1);
+                    }
                // Debug.Log(subtractee.name + " ");
                 }
                  //  Debug.Log(settings.subtractees.Count);

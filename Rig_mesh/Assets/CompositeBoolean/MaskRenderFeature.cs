@@ -56,13 +56,16 @@ public class MaskRendererFeature : ScriptableRendererFeature {
                 }
                   for (int i = 0; i < settings.maskDrawNum; ++i) {
                 foreach (var subtractor in settings.subtractors){
-                cmd.DrawRenderer(subtractor, settings.overrideMaterial, 0, settings.overrideMaterialPass);
-                cmd.DrawRenderer(subtractor, settings.overrideMaterial, 0, settings.overrideMaterialPass+1);
-               cmd.DrawRenderer(subtractor, settings.overrideMaterial, 0, settings.overrideMaterialPass+2);
-                cmd.DrawRenderer(subtractor, settings.overrideMaterial, 0, settings.overrideMaterialPass+3);
+                        if (subtractor != null)
+                        {
+                            cmd.DrawRenderer(subtractor, settings.overrideMaterial, 0, settings.overrideMaterialPass);
+                            cmd.DrawRenderer(subtractor, settings.overrideMaterial, 0, settings.overrideMaterialPass + 1);
+                            cmd.DrawRenderer(subtractor, settings.overrideMaterial, 0, settings.overrideMaterialPass + 2);
+                            cmd.DrawRenderer(subtractor, settings.overrideMaterial, 0, settings.overrideMaterialPass + 3);
+                        }
                     }
                 }
-                   Debug.Log(settings.subtractors.Count);
+                 
               //  context.DrawRenderers(renderingData.cullResults, ref drawingSettings, ref filteringSettings);
                 // Pass our custom target to shaders as a Global Texture reference
                 // In a Shader Graph, you'd obtain this as a Texture2D property with "Exposed" unticked

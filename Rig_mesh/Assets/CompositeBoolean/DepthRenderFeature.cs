@@ -55,6 +55,7 @@ public class DepthRendererFeature : ScriptableRendererFeature {
                     drawingSettings.overrideMaterial = settings.overrideMaterial;
                 }
                 foreach (var subtractee in settings.subtractees){
+                    if(subtractee != null)
                 cmd.DrawRenderer(subtractee, settings.overrideMaterial, 0, settings.overrideMaterialPass);
                // cmd.DrawRenderer(subtractee, settings.overrideMaterial, 0, settings.overrideMaterialPass+1);
                // Debug.Log(subtractee.name + " ");
