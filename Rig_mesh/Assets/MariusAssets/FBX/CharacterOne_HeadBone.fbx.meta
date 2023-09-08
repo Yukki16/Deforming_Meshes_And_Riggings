@@ -8,12 +8,14 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: BSurfaceMesh.001
-    second: {fileID: 2100000, guid: a562728436781ff419602cb0a2883c2d, type: 2}
+    second: {fileID: -876546973899608171, guid: 66ac6c02a2ea023c38fd6528f6d5af52,
+      type: 3}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: BodyMat.001
-    second: {fileID: 2100000, guid: a328f4a03e824b04d9e06607f490f583, type: 2}
+    second: {fileID: -876546973899608171, guid: a08716d8410923f0faa06de391874f75,
+      type: 3}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -28,12 +30,13 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Hair.001
-    second: {fileID: 2100000, guid: 2a059369b9b01754e9bca9095d252c1f, type: 2}
+    second: {fileID: 2100000, guid: dbddb47760d031856aaa8d349a8bc819, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: HeadMat.001
-    second: {fileID: 2100000, guid: d1da188824bfa194a801a779b37bcbae, type: 2}
+    second: {fileID: -876546973899608171, guid: 0de589ec485e3255b9cc052e465bce80,
+      type: 3}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -58,7 +61,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.015
-    second: {fileID: 2100000, guid: 9b2e124ae766e9240b11391c80052471, type: 2}
+    second: {fileID: 2100000, guid: 5bf9e3725e78509b8b3c597acaa2bf00, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -83,7 +86,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.020
-    second: {fileID: 2100000, guid: 22b69b2b3f667a142a979148094c04a8, type: 2}
+    second: {fileID: 2100000, guid: fd54ae1415b88fa7385bcaad2f3d37d6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

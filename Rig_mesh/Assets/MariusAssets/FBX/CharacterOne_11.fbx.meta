@@ -8,12 +8,14 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: BSurfaceMesh.001
-    second: {fileID: 2100000, guid: 86b871329b06f2748834c154c291a006, type: 2}
+    second: {fileID: -876546973899608171, guid: 66ac6c02a2ea023c38fd6528f6d5af52,
+      type: 3}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: BodyMat.001
-    second: {fileID: 2100000, guid: 9b3b40fcc3af7c04f9ae5067855c2d4c, type: 2}
+    second: {fileID: -876546973899608171, guid: a08716d8410923f0faa06de391874f75,
+      type: 3}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -33,7 +35,8 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: HeadMat.001
-    second: {fileID: 2100000, guid: a6c699e85d6350d4e920c0f5d822f97f, type: 2}
+    second: {fileID: -876546973899608171, guid: 0de589ec485e3255b9cc052e465bce80,
+      type: 3}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
